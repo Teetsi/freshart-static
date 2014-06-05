@@ -24,7 +24,7 @@ def fetch_detailed_information(url)
     }
   end
 
-  result['preview_image'] = "http://www.artlyst.com/#{doc.css('.view-page-image img').at_xpath('@src').text}"
+  result[:preview_image] = "http://www.artlyst.com/#{doc.css('.view-page-image img').at_xpath('@src').text}"
 
   result
 end
